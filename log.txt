@@ -1,0 +1,44 @@
+2024-12-22 06:21:17,063 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:21:52,073 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:24:59,407 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:25:18,466 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:25:36,417 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:27:00,945 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:27:20,877 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:32:38,640 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 06:33:00,971 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 07:35:06,573 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 07:35:24,077 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 07:35:55,986 - ERROR - Bot polling failed: invalid literal for int() with base 10: 'hours'
+2024-12-22 07:36:55,532 - ERROR - Bot polling failed: [Errno 2] No such file or directory: './bgmi'
+2024-12-22 07:37:10,533 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2024-12-22 07:37:10,534 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/util.py", line 93, in run
+    task(*args, **kwargs)
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/__init__.py", line 9165, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/Rrr/ss.py", line 282, in handle_callback_query
+    bot.edit_message_reply_markup(chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=generate_inline_keyboard(user_id, target_ip, target_port))
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/__init__.py", line 5065, in edit_message_reply_markup
+    result = apihelper.edit_message_reply_markup(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/apihelper.py", line 1574, in edit_message_reply_markup
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/telebot/apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+
+2024-12-22 07:42:00,457 - ERROR - Bot polling failed: invalid literal for int() with base 10: 'hours'
+2024-12-22 07:42:15,459 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
+2024-12-22 07:42:36,726 - ERROR - Bot polling failed: invalid literal for int() with base 10: 'dkwifnskfhsxd'
+2024-12-22 07:42:52,259 - ERROR - Bot polling failed: can only concatenate str (not "bytes") to str
